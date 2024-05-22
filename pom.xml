@@ -33,7 +33,6 @@
 	</dependencies>
 
 	<build>
-		<finalName>Rhode-State-Island</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
