@@ -1,9 +1,7 @@
-FROM openjdk:11
+FROM openjdk:17-jdk-slim
 
-COPY target/sbapp.jar /usr/app/
+COPY target/rhode-state.jar rhode-state.jar
 
-WORKDIR  /usr/app
+EXPOSE 1999
 
-EXPOSE 8080
-
-ENTRYPOINT ["java", "-jar", "sbapp.jar"]
+ENTRYPOINT ["java", "-jar", "rhode-state.jar"]
